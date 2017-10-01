@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1> Калькулятор 1 </h1>
+	<input type="text" id="var1" placeholder="Первая переменная"> <br>
+	<input type="text" id="var2" placeholder="Вторая переменная"> <br>
+	<input type="text" id="action" placeholder="+ - * /">
+	<!-- <input type="submit" id="btn1" value="Cложить">
+	<input type="submit" id="btn2" value="Вычесть">
+	<input type="submit" id="btn3" value="Умножить">
+	<input type="submit" id="btn4" value="Разделить"> <br> -->
+	<input type="submit" id="calc">
+	<input type="text" id="result">
+	<script>
+		function minus(){
+			var a,b;
+			a = document.getElementById("var1").value;
+			console.log("Число 1", a);
+			b = document.getElementById("var2").value;
+			console.log("Число 2",b);
+			a = Number(a) - Number(b);
+			console.log("Разность",  a);
+			document.getElementById("result").value = a;
+		}
+		function plus(){
+			var a,b;
+			a = document.getElementById("var1").value;
+			console.log("Число 1", a);
+			b = document.getElementById("var2").value;
+			console.log("Число 2",b);
+			a = Number(a) + Number(b);
+			console.log("Сумма",  a);
+			document.getElementById("result").value = a;
+		}
+		function umn(){
+			var a,b;
+			a = document.getElementById("var1").value;
+			console.log("Число 1", a);
+			b = document.getElementById("var2").value;
+			console.log("Число 2",b);
+			a = Number(a) * Number(b);
+			console.log("=",  a);
+			document.getElementById("result").value = a;
+		}
+		function del(){
+			var a,b;
+			a = document.getElementById("var1").value;
+			console.log("Число 1", a);
+			b = document.getElementById("var2").value;
+			console.log("Число 2",b);
+			a = Number(a) / Number(b);
+			console.log("=",  a);
+			document.getElementById("result").value = a;
+		}
+
+		function calc (){
+		var d;
+		d = document.getElementById("action").value;
+		console.log(d);
+		if (d == "/") {
+			del();
+		}
+		else if (d == "*"){
+			umn();
+		}
+		else if (d == "+") {
+			plus();	
+		}
+		else if (d == "-") {
+			minus();
+		}
+		}
+
+		document.getElementById("calc").onclick = calc;
+	</script>
+</body>
+</html>
