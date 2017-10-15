@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="submit" onclick="attack()" value="Атаковать">
+	<script src="js/items.js"></script>
+	<script src="js/spider.js"></script>
+	<script src="js/person.js"></script>
+	<script src="js/battle.js"></script>
+	<script>
+	function attack(){
+		if (spider.health>=0 && person.health>=0){
+			personAttack();
+			spiderAttack();
+			console.log("Person = " + person.health);
+			console.log("Spider = " + spider.health);
+		} else if (spider.health < 0){
+			console.log('Человек победил');
+		} else if (person.health < 0){
+			console.log('Паук победил');
+		}
+	}
+	</script>
+</body>
+</html>
