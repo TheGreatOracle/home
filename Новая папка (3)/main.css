@@ -1,0 +1,26 @@
+.header{
+	background-color: #2ecc71;
+	height: 50px;
+}
+.img1{
+	height: 80%;
+}
+.cont1{
+	font-weight: 600;
+}
+.publ{
+	font-weight: 800;
+}
+.dom{
+	font-weight: 800;
+}
+.hos{
+	font-weight: 800;
+}
+.menu li{
+	display: inline;
+	padding: 3px;
+}
+.mn {
+	background-color: #2ecc71;
+}
