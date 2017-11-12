@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="abc" type="text">
+	<input type="submit" placeholder="Реверсировать" onclick="reverse()">
+	<script>
+		function reverse(){
+			var word = document.getElementById("abc").value;
+			var woord = word.reversedCopy();
+			console.log(woord);
+			//console.log('Hi!');
+		}
+	</script>
+</body>
+</html>
