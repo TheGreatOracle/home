@@ -1,0 +1,54 @@
+.logo {
+	width: 100%;
+	height: auto;
+}
+.wrap-head{
+	background-color: #2980b9;
+}
+.telef{
+	font-size: 24px;
+	color: #fff;
+	margin-top: 10px;
+}
+.body{
+	background-color: #9b59b6;
+
+}
+.round{
+	border-radius: 200px;
+	width: 80%;
+	height: 90%;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.zap{
+	margin-top: 15px;
+	margin-left: 30px;
+}
+.tip{
+	margin-top:15px;
+}
+.stv{
+	border-radius: 250px;
+	height: 80%;
+	width: 90%;
+}
+.stvv{
+	border-radius:300px;
+	height: 60%;
+	width: 90%;
+}
+.stvvv{
+	border-radius: 200px;
+	height: 60%;
+	width: 85%;
+}
+.content{
+	background-color: #2980b9;
+}
+.content1{
+	margin-top:50px;
+}
+.text{
+	text-align: center;
+}
